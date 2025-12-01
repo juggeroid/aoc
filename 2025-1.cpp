@@ -15,7 +15,7 @@ int main() {
   char side {};
   std::int64_t turn {};
   while (stream >> side >> turn) {
-    std::int64_t old = pos; 
+    const std::int64_t old = pos; 
     switch (side) {
       case 'L': { 
         pos -= turn;
